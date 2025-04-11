@@ -30,14 +30,34 @@ public class ejerciciosRecursivos {
 
     ////
     
-    public int ultimoejerc (int n){
+    public int moddiv (int n){
         if (n<10){
             return n;
         }
         int ultimoDigito = n%10;
         int num = n /10;
-        return ultimoDigito + ultimoejerc(num);
+        return ultimoDigito + moddiv(num);
+    }  //FUNCIONOOOOOOOOOOOOOO
+
+
+    public int suman (int numerol){
+        if (numerol ==1){
+            return numerol;
+        }
+        System.out.print(numerol + ", ");
+        int resta = numerol -1;
+        return suman(resta);  //LO LOGREEEEEEEEEEEEEEEEEEEEEEEEEE
     }
+
+    public int reverso(int n2){
+        if (n2<10){
+            return n2;
+        }
+        int ultimoDigito = n2%10;
+        int num2 = n2 /10;
+        System.out.print(ultimoDigito + ", ");
+        return reverso(num2);
+    }  //FUNCIONOOOOOOOOOOOOOO
 }
 
 // git add.
